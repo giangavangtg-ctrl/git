@@ -1,0 +1,44 @@
+/* Khai báo các biến màu sắc cho Phiên bản 1 */
+:root {
+    --primary-color: #F25C05; /* Cam đỏ năng động */
+    --secondary-color: #038C7F; /* Xanh ngọc lục bảo */
+    --accent-color: #F2B705; /* Vàng tươi */
+    --text-color: #333333; /* Xám đậm */
+    --light-bg-color: #F7F9F9; /* Nền xám nhạt */
+    --darker-primary-color: #D95304; /* Cam đỏ đậm khi hover */
+}
+
+/* Áp dụng màu cho các thẻ chung */
+body {
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
+}
+
+/* Các class tiện ích (Utility classes) để thay đổi màu nền */
+.primary-bg { background-color: var(--primary-color); }
+.secondary-bg { background-color: var(--secondary-color); }
+.accent-bg { background-color: var(--accent-color); }
+
+/* Các class tiện ích để thay đổi màu chữ */
+.text-primary-color { color: var(--primary-color); }
+.text-secondary-color { color: var(--secondary-color); }
+.text-accent-color { color: var(--accent-color); }
+
+/* Tùy chỉnh Nút bấm (Button) */
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    font-weight: bold;
+}
+.btn-primary-custom:hover {
+    background-color: var(--darker-primary-color);
+    border-color: var(--darker-primary-color);
+    color: white;
+}
+
+/* Tùy chỉnh các khối Card */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
